@@ -22,7 +22,6 @@
     "@webcomponents/webcomponentsjs": "^2.3.0",
     "rollup": "^1.25.2",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "serve": "^11.2.0"
   }
