@@ -1,3 +1,4 @@
+import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 
@@ -5,10 +6,11 @@ export default {
     input: ['src/index.js'],
     output: {
         file: 'build/index.js',
-        format: 'umd',
+        format: 'esm',
     },
     plugins: [
         resolve(),
+        commonjs(),
         babel({
             presets: [
                 [
@@ -20,11 +22,7 @@ export default {
                         },
                     }
                 ]
-            ],
-            plugins: [
-                '@babel/plugin-proposal-class-properties',
-                ['@babel/proposal-decorators', { decoratorsBeforeExport: true }],
-            ],
+            ]
         })
     ]
 };

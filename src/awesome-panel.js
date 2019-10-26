@@ -1,3 +1,4 @@
+import "regenerator-runtime/runtime";
 import { LitElement, html, css } from 'lit-element';
 
 class AwesomePanel extends LitElement {

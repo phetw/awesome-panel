@@ -12,17 +12,17 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "peerDependencies": {
-    "lit-element": "^2.2.1"
+  "dependencies": {
+    "lit-element": "^2.2.1",
+    "regenerator-runtime": "^0.13.3"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-decorators": "^7.6.0",
     "@babel/preset-env": "^7.6.3",
     "@webcomponents/webcomponentsjs": "^2.3.0",
     "rollup": "^1.25.2",
     "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "serve": "^11.2.0"
   }
