@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
