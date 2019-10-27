@@ -1,7 +1,7 @@
 {
   "name": "awesome-panel",
   "version": "1.0.0",
-  "description": "",
+  "description": "An example of lit-element setup that works on IE11",
   "main": "index.js",
   "scripts": {
     "copyindex": "cp src/index.html build",
@@ -10,7 +10,7 @@
     "start": "serve build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wasuwat Limsuparhat <wasuwat.se@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "lit-element": "^2.2.1",
