@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
+import filesize from 'rollup-plugin-filesize'
 
 export default [
     {
@@ -11,7 +12,8 @@ export default [
         },
         plugins: [
             resolve(),
-            terser()
+            terser(),
+            filesize()
         ]
     },
     {
@@ -36,7 +38,8 @@ export default [
                     ]
                 ]
             }),
-            terser()
+            terser(),
+            filesize()
         ]
     }
 ];
