@@ -9,7 +9,10 @@
     "build": "rm -rf build && mkdir build && npm run copyindex && npm run copywc && rollup -c",
     "start": "serve build"
   },
-  "keywords": [],
+  "keywords": ["webcomponent", "lit-element", "ie11", "sample", "example"],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "Wasuwat Limsuparhat <wasuwat.se@gmail.com>",
   "license": "MIT",
   "dependencies": {
