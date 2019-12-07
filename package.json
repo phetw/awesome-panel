@@ -11,7 +11,7 @@
   },
   "keywords": ["webcomponent", "lit-element", "ie11", "sample", "example"],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/@phetw"
   },
   "author": "Wasuwat Limsuparhat <wasuwat.se@gmail.com>",
   "license": "MIT",
