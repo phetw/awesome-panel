@@ -28,5 +28,4 @@ class AwesomePanel extends LitElement {
     }
 }
 
-
 customElements.define('awesome-panel', AwesomePanel);
