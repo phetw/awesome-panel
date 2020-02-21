@@ -9,25 +9,33 @@
     "build": "rm -rf build && mkdir build && npm run copyindex && npm run copywc && rollup -c",
     "start": "serve build"
   },
-  "keywords": ["webcomponent", "lit-element", "ie11", "sample", "example"],
+  "keywords": [
+    "webcomponent",
+    "lit-element",
+    "ie11",
+    "sample",
+    "example"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@phetw"
   },
   "author": "Wasuwat Limsuparhat <wasuwat.se@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@babel/runtime": "^7.8.4",
     "lit-element": "^2.2.1",
-    "regenerator-runtime": "^0.13.3"
+    "rollup-plugin-commonjs": "^10.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@webcomponents/webcomponentsjs": "^2.3.0",
-    "rollup": "^1.25.2",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@webcomponents/webcomponentsjs": "^2.4.1",
+    "rollup": "^1.31.1",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-filesize": "^6.2.1",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^5.1.2",
-    "serve": "^11.2.0"
+    "rollup-plugin-terser": "^5.2.0",
+    "serve": "^11.3.0"
   }
 }
