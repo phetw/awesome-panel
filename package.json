@@ -22,20 +22,20 @@
   "author": "Wasuwat Limsuparhat <wasuwat.se@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.8.4",
-    "lit-element": "^2.2.1",
+    "@babel/runtime": "^7.11.2",
+    "lit-element": "^2.4.0",
     "rollup-plugin-commonjs": "^10.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
-    "@webcomponents/webcomponentsjs": "^2.4.1",
-    "rollup": "^1.31.1",
-    "rollup-plugin-babel": "^4.3.3",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@webcomponents/webcomponentsjs": "^2.4.4",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-filesize": "^6.2.1",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^5.2.0",
-    "serve": "^11.3.0"
+    "rollup-plugin-terser": "^5.3.1",
+    "serve": "^11.3.2"
   }
 }
