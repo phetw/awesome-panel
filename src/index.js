@@ -1,1 +1,0 @@
-import './awesome-panel.js'

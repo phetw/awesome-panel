@@ -1,28 +1,28 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
-import { terser } from 'rollup-plugin-terser';
 import filesize from 'rollup-plugin-filesize';
+import { terser } from 'rollup-plugin-terser';
 
 export default [
   {
-    input: ['src/index.js'],
+    input: ['src/awesome-panel.js'],
     output: {
-      file: 'build/index.js',
-      format: 'esm'
+      file: 'build/awesome-panel.js',
+      format: 'esm',
     },
-    plugins: [resolve(), terser(), filesize()]
+    plugins: [resolve(), terser(), filesize()],
   },
   {
-    input: ['src/index.js'],
+    input: ['src/awesome-panel.js'],
     output: {
-      file: 'build/index.legacy.js',
-      format: 'esm'
+      file: 'build/awesome-panel.es5.js',
+      format: 'esm',
     },
     plugins: [
       resolve(),
       commonjs({
-        include: 'node_modules/**'
+        include: 'node_modules/**',
       }),
       babel({
         runtimeHelpers: true,
@@ -30,18 +30,17 @@ export default [
           [
             '@babel/preset-env',
             {
-              useBuiltIns: false,
               modules: false,
               targets: {
-                browsers: '> 1%, IE 11, not dead'
-              }
-            }
-          ]
+                browsers: '> 1%, IE 11, not dead',
+              },
+            },
+          ],
         ],
-        plugins: ['@babel/plugin-transform-runtime']
+        plugins: ['@babel/plugin-transform-runtime'],
       }),
       terser(),
-      filesize()
-    ]
-  }
+      filesize(),
+    ],
+  },
 ];
