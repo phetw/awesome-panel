@@ -22,14 +22,14 @@
   "author": "Wasuwat Limsuparhat <wasuwat.se@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.11.2",
+    "@babel/runtime": "^7.12.1",
     "lit-element": "^2.4.0",
     "rollup-plugin-commonjs": "^10.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/plugin-transform-runtime": "^7.11.5",
-    "@babel/preset-env": "^7.11.5",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
     "@webcomponents/webcomponentsjs": "^2.4.4",
     "rollup": "^1.32.1",
     "rollup-plugin-babel": "^4.4.0",
