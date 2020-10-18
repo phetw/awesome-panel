@@ -1,5 +1,5 @@
 import { html, fixture, expect } from '@open-wc/testing';
-import '../src/awesome-panel.js';
+import '../build/awesome-panel.js';
 
 describe('awesome-panel', () => {
   it('can semantically compare light DOM trees', async () => {
