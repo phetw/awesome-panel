@@ -3,11 +3,11 @@ import '../build/awesome-panel.js';
 
 describe('awesome-panel', () => {
   it('can semantically compare light DOM trees', async () => {
-    const el = await fixture(html`<awesome-panel><h1>Light DOM</h1></awesome-panel>`);
-    expect(el).lightDom.to.equal('<h1>Light DOM</h1>');
+    const el = await fixture(html`<awesome-panel header="Hello"><p>Light DOM</p></awesome-panel>`);
+    expect(el).lightDom.to.equal('<p>Light DOM</p>');
   });
   it('can access shadow DOM', async () => {
-    const el = await fixture(html`<awesome-panel>Shadow DOM</awesome-panel>`);
+    const el = await fixture(html`<awesome-panel header="Hello">Shadow DOM</awesome-panel>`);
     await expect(el).shadowDom.to.be.accessible();
   });
 });
