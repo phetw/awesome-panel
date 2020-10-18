@@ -16,18 +16,10 @@
 
     <!-- load webcomponents bundle, which includes all the necessary polyfills -->
     <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
-
-    <script>
-      if (typeof HTMLElement === 'object')
-        document.write('<script src="https://unpkg.com/custom-elements-es5-adapter@@1.0.0/custom-elements-es5-adapter.js" crossorigin="anonymous"><' + '/script>');
-    </script>
-
   </head>
 
   <body>
     <script src="/build/awesome-panel.js" type="module"></script>
-    <script src="/build/awesome-panel.es5.js" nomodule=""></script>
-
     <awesome-panel header="Hello">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit consectetur ex ipsa quibusdam, adipisci ducimus quae ab a similique id dolor reiciendis animi, minima,
       doloremque fugiat et? Distinctio eum officiis blanditiis tenetur dignissimos deleniti voluptatem obcaecati officia eveniet ipsam laboriosam ab nulla earum, laudantium
