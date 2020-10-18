@@ -1,6 +1,6 @@
 {
   "name": "@phetw/awesome-panel",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "An example of lit-element setup that works on IE11",
   "main": "index.js",
   "module": "index.js",
