@@ -23,3 +23,8 @@ jobs:
           CI_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
           CI_BRANCH_BASE: master
       - run: npm test
+      
+      - name: Package size report
+        uses: pkg-size/action@v1
+        env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
