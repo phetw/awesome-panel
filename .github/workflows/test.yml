@@ -23,5 +23,3 @@ jobs:
           CI_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
           CI_BRANCH_BASE: master
       - run: npm test
-      - name: Bundle size diff
-        uses: NejcZdovc/bundle-size-diff@v1.1.0
