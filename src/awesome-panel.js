@@ -26,6 +26,11 @@ class AwesomePanel extends LitElement {
   render() {
     return html`
       <h1>${this.header}</h1>
+      Feature
+            Feature
+                  Feature
+                        Feature
+                              Feature
       <slot></slot>
     `;
   }
