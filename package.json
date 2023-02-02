@@ -36,7 +36,7 @@
   "devDependencies": {
     "@open-wc/testing": "^2.5.29",
     "@web/dev-server": "0.0.15",
-    "@web/test-runner": "^0.9.4",
+    "@web/test-runner": "^0.9.13",
     "@webcomponents/webcomponentsjs": "^2.4.4",
     "bundlewatch": "^0.3.3",
     "rollup": "^1.32.1",
